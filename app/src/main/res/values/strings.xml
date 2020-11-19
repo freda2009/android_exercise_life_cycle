@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">CH11_03_Exercise</string>
+    <string name="btnGame">猜拳遊戲</string>
+    <string name="player">玩家出拳</string>
+    <string name="computer">電腦出拳</string>
+    <string name="scissors">剪刀</string>
+    <string name="stone">石頭</string>
+    <string name="paper">布</string>
+    <string name="win">恭喜，你贏了!</string>
+    <string name="lose">很可惜，你輸了!</string>
+    <string name="draw">平手!</string>
+
+    <string name="btnImageview">影像檢視器</string>
+
+
+    <string name="btnSuggest">婚姻建議</string>
+    <string name="textSex">性別:</string>
+    <string name="textAge">年齡:</string>
+    <string name="suggestion">建議</string>
+    <string name="not_hurry">還不急。</string>
+    <string name="get_married">趕快結婚!</string>
+    <string name="find_couple">開始找對象。</string>
+    <string name="radbtn_male">男生</string>
+    <string name="radbtn_female">女生</string>
+    <string name="radbtn_male_age1">小於28歲</string>
+    <string name="radbtn_male_age2">28~33歲</string>
+    <string name="radbtn_male_age3">大於33歲</string>
+    <string name="radbtn_female_age1">小於25歲</string>
+    <string name="radbtn_female_age2">25~30歲</string>
+    <string name="radbtn_female_age3">大於30歲</string>
+
+
+    <string name="btnBmi">BMI</string>
+    <string name="height">身高(cm):</string>
+    <string name="weight">體重(kg):</string>
+    <string name="calculate">計算</string>
+    <string name="normal">正常</string>
+    <string name="light">過輕</string>
+    <string name="heavy">過重</string>
+
+    <string name="btnFood">點餐系統</string>
+    <string name="txtTable">桌次:</string>
+    <string name="txtMain">主餐:</string>
+    <string name="txtSecond">副餐:</string>
+    <string name="chkShrimp">鮮蝦蘆筍(80元)</string>
+    <string name="chkTofu">香炸豆腐(50元)</string>
+    <string name="txtDessert">甜點:</string>
+    <string name="rdbIcecream">冰淇淋</string>
+    <string name="rdbJelly">果凍</string>
+    <string name="btnOK">點餐</string>
+    <string-array name="sprMain">
+        <item>鮮烤魚排(200元)</item>
+        <item>焗烤明蝦(250元)</item>
+        <item>法式烤雞(300元)</item>
+        <item>嫩煎牛排(350元)</item>
+    </string-array>
+</resources>

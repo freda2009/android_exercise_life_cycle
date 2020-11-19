@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnGame"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.226" />
+
+    <Button
+        android:id="@+id/btnImageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/btnImageview"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnGame"
+        app:layout_constraintStart_toStartOf="@+id/btnGame"
+        app:layout_constraintTop_toBottomOf="@+id/btnGame" />
+
+    <Button
+        android:id="@+id/btnSuggest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/btnSuggest"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnImageview"
+        app:layout_constraintStart_toStartOf="@+id/btnImageview"
+        app:layout_constraintTop_toBottomOf="@+id/btnImageview" />
+
+
+    <Button
+        android:id="@+id/btnBmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/btnBmi"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnSuggest"
+        app:layout_constraintStart_toStartOf="@+id/btnSuggest"
+        app:layout_constraintTop_toBottomOf="@+id/btnSuggest" />
+
+
+    <Button
+        android:id="@+id/btnFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/btnFood"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnBmi"
+        app:layout_constraintStart_toStartOf="@+id/btnBmi"
+        app:layout_constraintTop_toBottomOf="@+id/btnBmi" />
+</androidx.constraintlayout.widget.ConstraintLayout>
