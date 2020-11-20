@@ -8,7 +8,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.AlphaAnimation;
+import android.view.animation.AnticipateInterpolator;
+import android.view.animation.BounceInterpolator;
 import android.view.animation.DecelerateInterpolator;
+import android.view.animation.OvershootInterpolator;
 import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
@@ -59,19 +62,22 @@ public class ImageviewActivity extends AppCompatActivity implements ViewSwitcher
 
 
             AlphaAnimation alphaAnimation =new AlphaAnimation(0,1);
-            alphaAnimation.setInterpolator(new DecelerateInterpolator());
+            alphaAnimation.setInterpolator(new OvershootInterpolator());// 匿名寫法
             alphaAnimation.setDuration(2000);
 
             ScaleAnimation scaleAnimation =new ScaleAnimation(0.5f,1,0.5f,1);
+            scaleAnimation.setInterpolator(new BounceInterpolator());// 匿名寫法
             scaleAnimation.setDuration(2000);
 
             TranslateAnimation translateAnimation =new TranslateAnimation(0,0,-600,0);
-            translateAnimation.setInterpolator(new AccelerateInterpolator());  // 匿名寫法
+            //translateAnimation.setInterpolator(new AccelerateInterpolator());  // 匿名寫法
+            translateAnimation.setInterpolator(new AnticipateInterpolator());// 匿名寫法
             translateAnimation.setFillAfter(true);
             translateAnimation.setStartOffset(1000);
             translateAnimation.setDuration(2000);
 
             RotateAnimation rotateAnimation=new RotateAnimation(0,360);
+            rotateAnimation.setInterpolator(new DecelerateInterpolator());// 匿名寫法
             rotateAnimation.setDuration(2000);
 
             switch(iComPlay){
