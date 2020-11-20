@@ -56,10 +56,10 @@ public class MainActivity extends AppCompatActivity {
                     it.setClass(MainActivity.this,BmiActivity.class);
                     break;
                 case R.id.btnSuggest:
-                    it.setClass(MainActivity.this,FoodActivity.class);
+                    it.setClass(MainActivity.this,SuggestActivity.class);
                     break;
                 case R.id.btnFood:
-                    it.setClass(MainActivity.this,SuggestActivity.class);
+                    it.setClass(MainActivity.this,FoodActivity.class);
                     break;
                 case R.id.btnImageview:
                     it.setClass(MainActivity.this,ImageviewActivity.class);
