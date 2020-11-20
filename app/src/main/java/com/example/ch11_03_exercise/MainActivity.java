@@ -27,13 +27,51 @@ public class MainActivity extends AppCompatActivity {
         btnFood=findViewById(R.id.btnFood);
         btnImageview=findViewById(R.id.btnImageview);
 
+
+/*
         btnGame.setOnClickListener(btnGameOnClick);
         btnBmi.setOnClickListener(btnBmiOnClick);
         btnSuggest.setOnClickListener(btnSuggestOnClick);
         btnFood.setOnClickListener(btnFoodOnClick);
         btnImageview.setOnClickListener(btnImageviewOnClick);
+*/
 
+        btnGame.setOnClickListener(btnOnClick);
+        btnBmi.setOnClickListener(btnOnClick);
+        btnSuggest.setOnClickListener(btnOnClick);
+        btnFood.setOnClickListener(btnOnClick);
+        btnImageview.setOnClickListener(btnOnClick);
     }
+
+    private  View.OnClickListener btnOnClick =new View.OnClickListener(){
+        Intent it = new Intent();
+
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()){
+                case R.id.btnGame:
+                    it.setClass(MainActivity.this,GameActivity.class);
+                    break;
+                case R.id.btnBmi:
+                    it.setClass(MainActivity.this,BmiActivity.class);
+                    break;
+                case R.id.btnSuggest:
+                    it.setClass(MainActivity.this,FoodActivity.class);
+                    break;
+                case R.id.btnFood:
+                    it.setClass(MainActivity.this,SuggestActivity.class);
+                    break;
+                case R.id.btnImageview:
+                    it.setClass(MainActivity.this,ImageviewActivity.class);
+                    break;
+
+            }
+            startActivity(it);
+        }
+    };
+
+
+/*
     private View.OnClickListener btnGameOnClick = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -78,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(it);
         }
     };
-
+*/
 
     @Override
     protected void onStart() {
